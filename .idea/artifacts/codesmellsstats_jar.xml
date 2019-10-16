@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="codesmellsstats:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/codesmellsstats_jar</output-path>
+    <root id="archive" name="codesmellsstats.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="codesmellsstats" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/javaparser/javaparser-core/3.14.14/javaparser-core-3.14.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
