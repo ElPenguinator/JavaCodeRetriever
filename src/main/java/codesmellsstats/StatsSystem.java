@@ -22,11 +22,9 @@ public class StatsSystem {
 
         if (args.length == 3) {
             //Path testFile = Paths.get(new URI("file:///D:/AndroidStudioProjects/androiddynamicverification/app/src/main/java/com/core/lambdaapplication/MainActivity.java"));
-            System.out.println(args[0]);
             Path testFile = Paths.get(new URI("file:///"+args[0]));
             CompilationUnit compilationUnit = StaticJavaParser.parse(testFile);
             //Optional<ClassOrInterfaceDeclaration> classA = compilationUnit.getClassByName("MainActivity");
-            System.out.println(args[1]);
             Optional<ClassOrInterfaceDeclaration> classA = compilationUnit.getClassByName(args[1]);
             /*
             switch (args[2]) {
@@ -45,7 +43,6 @@ public class StatsSystem {
                     break;
             }
             */
-            System.out.println(args[2]);
             List<MethodDeclaration> methodToRetrieve = classA.get().getMethodsByName(args[2]);
             if (!methodToRetrieve.isEmpty())
                 System.out.println(methodToRetrieve.get(0).toString());
